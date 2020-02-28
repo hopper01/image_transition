@@ -1,0 +1,124 @@
+/* main.css */
+
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  background: wheat;
+  background: linear-gradient(to bottom,cornflowerblue 20%, lightpink 100%) fixed;
+  border-top: 5px solid black;
+}
+#wrapper {
+  width:100%;
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-top: 60px;
+}
+#header{
+  font-family: 'fantasy', Serif;
+  font-family: Arial,Helvetica, Arial, Lucida Grande, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 20px;
+  color: #0f9d58;
+  text-shadow: rgba(0,0,0.4)2px 2px 5px;
+  font-size: 35px;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  margin-right:7px;
+  border-radius: 105px;
+  border: 5px solid snow;
+  box-shadow: rgba(0,0,0,0.5)10px 10px 20px;
+  position: relative;
+  overflow:hidden;
+}
+img{
+  border-radius: 100px;
+}
+.text {
+  font-size: 20px;
+  color: #4f1acb;
+}
+.box div{
+  width: 200px;
+  height: 105px;
+  background: black;
+  text-align: center;
+  border-radius: 100px;
+  padding: 95px 0 0 0;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.effect1 div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 700ms;
+  color: whitesmoke;
+}
+.effect1 div:hover{
+  opacity: 0.8;
+}
+ .effect2 img{
+  position:absolute;
+  top:0;
+  left:0;
+   margin-left: 0px;
+  transition:margin-left 800ms;
+  color:whitesmoke;
+}
+.effect2:hover img{margin-left: 205px;}
+.effect3 div {
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  margin-left: -200px;
+  transition: margin-left 800ms;
+  color: whitesmoke;
+}
+.effect3:hover div{margin-left: 0}
+
+.effect4 img{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.effect4 div{
+  opacity: 0.8;
+  transform: scale(0);
+  transition-duration: 500ms;
+  color: whitesmoke;
+}
+.effect4:hover div{
+  transform: scale(1);
+}
+ .effect5 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition-duration: 500ms;
+ }
+
+ .effect5:hover img{
+  transform: scale(0);
+}
+ .effect6 img{
+  position: absolute;
+  top: 0;
+  left:0;
+  transition-duration: 1100ms;
+}
+ .effect6:hover img{
+  box-shadow: none;
+  transform:rotate3d(10,20,30,180deg);
+}
+
